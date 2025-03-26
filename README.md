@@ -1,11 +1,11 @@
 
-# 🧱 Dockerized Blockchain Simulation
+# Dockerized Blockchain Simulation
 
 This project simulates a basic blockchain with a **Flask** backend and **React** frontend, all running in Docker containers. The system includes core blockchain concepts like block creation, mining (proof-of-work), and transaction management. It demonstrates how to use Docker to containerize a full-stack web application.
 
 ---
 
-## 📦 Features
+## Features
 
 - **Backend** (Flask):
   - Create a blockchain
@@ -22,14 +22,14 @@ This project simulates a basic blockchain with a **Flask** backend and **React**
 
 ---
 
-## 🖥️ Requirements
+## Requirements
 
 - **Docker**: Docker Engine installed and running.
 - **Docker Compose**: Ensure you have Docker Compose installed.
 
 ---
 
-## 🚀 Setup & Execution Instructions
+## Setup & Execution Instructions
 
 ### 1. Clone or Download This Repository
 
@@ -53,9 +53,9 @@ docker-compose up --build
 
 ---
 
-## 🧠 Code Overview
+## Code Overview
 
-### 📦 `blockchain.py` (Backend)
+###  `blockchain.py` (Backend)
 
 - **`Block` class**: Defines the structure of a block in the blockchain, including methods for hash calculation and tampering prevention.
 - **`Blockchain` class**: Handles the creation and management of the blockchain, including adding transactions, mining blocks, and validating the chain.
@@ -67,14 +67,14 @@ docker-compose up --build
   - `POST /transaction`: Adds a new transaction.
   - `POST /mine`: Mines a new block with pending transactions.
 
-### 🖼️ `App.js` (Frontend)
+### `App.js` (Frontend)
 
 - React-based interface to interact with the blockchain:
   - Displays the entire blockchain.
   - Allows users to add new transactions.
   - Provides a button to mine new blocks.
 
-### 🗂️ Docker Setup
+### Docker Setup
 
 - **Dockerfile (Backend)**: Sets up a Flask server to run the backend.
 - **Dockerfile (Frontend)**: Builds and serves the React app using Nginx.
@@ -82,7 +82,7 @@ docker-compose up --build
 
 ---
 
-## 🔍 Example Output
+## Example Output
 
 ```bash
 Mining Block #1...
@@ -101,16 +101,7 @@ Is chain valid? False
 
 ---
 
-## 📚 Learning Objectives
-
-- Learn about **blockchain basics** like blocks, transactions, and mining.
-- Understand how to **containerize applications** using Docker and Docker Compose.
-- Experience **frontend-backend communication** in a full-stack setup.
-- Experiment with the **proof-of-work** concept used in real-world blockchains like Bitcoin.
-
----
-
-## 📜 License
+## License
 
 This project is open-source and available under the MIT License.
 
