@@ -80,23 +80,6 @@ A basic hash puzzle: finding a nonce such that the block's SHA-256 hash starts w
 
 ---
 
-## 🔍 Example Output
-
-```bash
-Mining Block #1...
-Block #1 mined: 000ac9d0f...
-
-Mining Block #2...
-Block #2 mined: 000bba4b8...
-
-=== Validating Blockchain ===
-Is chain valid? True
-
-=== Tampering with Blockchain ===
-Tampering with Block #1...
-Is chain valid? False
-```
----
 
 ## License
 
@@ -104,7 +87,7 @@ This project is open-source and available under the MIT License.
 
 ---
 
-## ✍️ Author
+## Author
 
-Developed by [Your Name]
+Developed by DudeDope
 
