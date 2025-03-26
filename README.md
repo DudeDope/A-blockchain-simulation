@@ -34,8 +34,8 @@ This project simulates a basic blockchain with a **Flask** backend and **React**
 ### 1. Clone or Download This Repository
 
 ```bash
-git clone https://github.com/your-username/simple-blockchain-docker.git
-cd simple-blockchain-docker
+git clone https://github.com/DudeDope/A-blockchain-simulation.git
+cd A-blockchain-simulation
 ```
 
 ---
@@ -54,14 +54,9 @@ docker-compose up --build
 ---
 
 ## Code Overview
-
-###  `blockchain.py` (Backend)
-
+### `app.py` (Backend)
 - **`Block` class**: Defines the structure of a block in the blockchain, including methods for hash calculation and tampering prevention.
 - **`Blockchain` class**: Handles the creation and management of the blockchain, including adding transactions, mining blocks, and validating the chain.
-
-### 🔗 `app.py` (Backend)
-
 - Exposes RESTful API endpoints:
   - `GET /chain`: Returns the current blockchain.
   - `POST /transaction`: Adds a new transaction.
@@ -79,35 +74,3 @@ docker-compose up --build
 - **Dockerfile (Backend)**: Sets up a Flask server to run the backend.
 - **Dockerfile (Frontend)**: Builds and serves the React app using Nginx.
 - **docker-compose.yml**: Links the backend and frontend containers, ensuring communication between them on a custom network.
-
----
-
-## Example Output
-
-```bash
-Mining Block #1...
-Block #1 mined: 000ac9d0f...
-
-Mining Block #2...
-Block #2 mined: 000bba4b8...
-
-=== Validating Blockchain ===
-Is chain valid? True
-
-=== Tampering with Blockchain ===
-Tampering with Block #1...
-Is chain valid? False
-```
-
----
-
-## License
-
-This project is open-source and available under the MIT License.
-
----
-
-## ✍️ Author
-
-Developed by [Your Name]
-
